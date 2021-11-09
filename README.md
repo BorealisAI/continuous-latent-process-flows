@@ -2,10 +2,10 @@
 
 ![](fig1cr.png)
 
-Code for the paper
+Code, data, and pre-trained models for the paper
 
-> Ruizhi Deng, Marcus Brubaker, Greg Mori, Andreas Lehrmann. "Continuous Latent Process Flows" (2021)
-[[arxiv]](https://arxiv.org/pdf/2106.15580.pdf)
+> Ruizhi Deng, Marcus Brubaker, Greg Mori, Andreas Lehrmann. "Continuous Latent Process Flows" (NeurIPS 2021)
+[[arXiv]](https://arxiv.org/pdf/2106.15580.pdf)[[OpenReview]](https://openreview.net/forum?id=KzYIEQ_B1BX&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DNeurIPS.cc%2F2021%2FConference%2FAuthors%23your-submissions))
 
 
 ## Environment setup
@@ -17,22 +17,23 @@ The code make uses of code from the following projects:
 
 https://github.com/BorealisAI/continuous-time-flow-process
 for the paper
-> Ruizhi Deng, Bo Chang, Marcus Brubaker, Greg Mori, Andreas Lehrmann. "Modeling Continuous Stochastic Process with Dynamic Normalizing Flow" (2020)
-[[arxiv]](https://arxiv.org/pdf/2002.10516.pdf)
+> Ruizhi Deng, Bo Chang, Marcus Brubaker, Greg Mori, Andreas Lehrmann. "Modeling Continuous Stochastic Process with Dynamic Normalizing Flow" (NeurIPS 2020).
+[[arXiv]](https://arxiv.org/pdf/2002.10516.pdf)
 
 https://github.com/YuliaRubanova/latent_ode
 for the paper
-> Yulia Rubanova, Ricky Chen, David Duvenaud. "Latent ODEs for Irregularly-Sampled Time Series" (2019)
-[[arxiv]](https://arxiv.org/abs/1907.03907)
+> Yulia Rubanova, Ricky Chen, David Duvenaud. "Latent ODEs for Irregularly-Sampled Time Series" (NeurIPS 2019).
+[[arXiv]](https://arxiv.org/abs/1907.03907)
 
 https://github.com/rtqichen/ffjord
 for the paper
-> Will Grathwohl*, Ricky T. Q. Chen*, Jesse Bettencourt, Ilya Sutskever, David Duvenaud. "FFJORD: Free-form Continuous Dynamics for Scalable Reversible Generative Models." _International Conference on Learning Representations_ (2019).
-> [[arxiv]](https://arxiv.org/abs/1810.01367) [[bibtex]](http://www.cs.toronto.edu/~rtqichen/bibtex/ffjord.bib)
+> Will Grathwohl*, Ricky T. Q. Chen*, Jesse Bettencourt, Ilya Sutskever, David Duvenaud. "FFJORD: Free-form Continuous Dynamics for Scalable Reversible Generative Models" (ICLR 2019).
+> [[arXiv]](https://arxiv.org/abs/1810.01367)
 
 https://github.com/rtqichen/residual-flows
 for the paper
-> Ricky T. Q. Chen, Jens Behrmann, David Duvenaud, Jörn-Henrik Jacobsen. "Residual Flows for Invertible Generative Modeling." _Neural Information Processing Systems_ (2019).
+> Ricky T. Q. Chen, Jens Behrmann, David Duvenaud, Jörn-Henrik Jacobsen. "Residual Flows for Invertible Generative Modeling" (NeurIPS 2019).
+> [[arXiv]](https://arxiv.org/abs/1906.02735)
 
 ## Data preparation
 Download simulated synthetic data and preprocessed real-world datasets from [this link](https://drive.google.com/file/d/1w-xogM3Gr6MF2pm6kRRfBWcltEKjBJJ3/view?usp=sharing) and unzip the file in this directory.
@@ -106,7 +107,7 @@ Run ```python run_prediction_summary.py``` to see the summary of L2 distance bet
 
 ## Evaluation Results
 
-### Synthetic Data Evalutaiont Results
+### Synthetic Data Evalutation Results
 We report IWAE bound estimated with 125 latent samples. <img src="https://render.githubusercontent.com/render/math?math=\lambda"> in the parenthesis indicates the rate of a poisson point process from which the observation time points are sampled from.
 | <sub><img src="https://render.githubusercontent.com/render/math?math=\text{GBM}(\lambda=2)"></sub> | <sub><img src="https://render.githubusercontent.com/render/math?math=\text{GBM}(\lambda=20)"></sub> | <sub><img src="https://render.githubusercontent.com/render/math?math=\text{LSDE}(\lambda=2)"></sub> | <sub><img src="https://render.githubusercontent.com/render/math?math=\text{LSDE}(\lambda=20)"></sub> | <sub><img src="https://render.githubusercontent.com/render/math?math=\text{CAR}(\lambda=2)"></sub> | <sub><img src="https://render.githubusercontent.com/render/math?math=\text{CAR}(\lambda=20)"></sub> | <sub><img src="https://render.githubusercontent.com/render/math?math=\text{SLC}(\lambda=20)"></sub> | <sub><img src="https://render.githubusercontent.com/render/math?math=\text{SLC}(\lambda=40)"></sub> |
 | :------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: |
