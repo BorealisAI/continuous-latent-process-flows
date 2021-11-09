@@ -1,0 +1,6 @@
+matplotlib==3.4.3
+numpy==1.21.2
+scikit-learn==1.0.1
+scipy
+six==1.16.0
+tensorboardX==2.1
