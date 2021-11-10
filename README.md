@@ -2,6 +2,8 @@
 
 ![](fig1cr.png)
 
+## About
+
 Code, data, and pre-trained models for the paper
 
 > Ruizhi Deng, Marcus Brubaker, Greg Mori, Andreas Lehrmann. "Continuous Latent Process Flows" (NeurIPS 2021)
@@ -107,7 +109,7 @@ Run ```python run_prediction_summary.py``` to see the summary of L2 distance bet
 
 ## Evaluation Results
 
-### Synthetic Data Evalutation Results
+### Synthetic Data Evaluatation Results
 We report IWAE bound estimated with 125 latent samples. <img src="https://render.githubusercontent.com/render/math?math=\lambda"> in the parenthesis indicates the rate of a poisson point process from which the observation time points are sampled from.
 | <sub><img src="https://render.githubusercontent.com/render/math?math=\text{GBM}(\lambda=2)"></sub> | <sub><img src="https://render.githubusercontent.com/render/math?math=\text{GBM}(\lambda=20)"></sub> | <sub><img src="https://render.githubusercontent.com/render/math?math=\text{LSDE}(\lambda=2)"></sub> | <sub><img src="https://render.githubusercontent.com/render/math?math=\text{LSDE}(\lambda=20)"></sub> | <sub><img src="https://render.githubusercontent.com/render/math?math=\text{CAR}(\lambda=2)"></sub> | <sub><img src="https://render.githubusercontent.com/render/math?math=\text{CAR}(\lambda=20)"></sub> | <sub><img src="https://render.githubusercontent.com/render/math?math=\text{SLC}(\lambda=20)"></sub> | <sub><img src="https://render.githubusercontent.com/render/math?math=\text{SLC}(\lambda=40)"></sub> |
 | :------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: |
