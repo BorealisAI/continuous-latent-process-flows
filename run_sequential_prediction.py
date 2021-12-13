@@ -261,9 +261,8 @@ if __name__ == "__main__":
             loss_list = [item1.flatten() for item1 in loss_lst]
 
         loss_list = np.concatenate(loss_lst)
-        print("RMSE:", sum([item.sum() for item in loss_lst]) / sum(length_lst))
-        print("RMSE2: ", np.mean(loss_list))
-        print("RMSE Stdv: ", np.std(loss_list))
+        print("L2: ", np.mean(loss_list))
+        print("L2 Stdv: ", np.std(loss_list))
         if args.save_np is not None:
             with open(args.save_np, "wb") as f:
                 pickle.dump((pred_lst, target_lst, mask_lst), f)

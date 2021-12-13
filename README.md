@@ -71,7 +71,7 @@ The pretrained models are under ```pretrained``` directory.
 ### Likelihood Estimation on geometric Brownian motion <img src="https://render.githubusercontent.com/render/math?math=(\lambda=2)">
 ```python run_likelihood_estimation.py --eval --latent_dim 2 --hidden_dim 16 --observation_dim 1 --batch_size 128 --log_freq 1 --test_batch_size 10 --atol 1e-2 --anode_num_blocks 5 --data_path data/gbm_05.pkl --resume pretrained/model_gbm.pth --num_iwae 125 --niwae_test 125 --adaptive True```
 ### Likelihood Estimation on geometric Brownian motion <img src="https://render.githubusercontent.com/render/math?math=(\lambda=20)">
-```python run_likelihood_estimation.py --eval --latent_dim 2 --hidden_dim 16 --observation_dim 1 --batch_size 128 --log_freq 1 --test_batch_size 10 --atol 1e-2 --anode_num_blocks 5 --data_path data/gbm_005.pkl --resume pretrained/model_gbm.pth --num_iwae 125 --niwae_test 125```
+```python run_likelihood_estimation.py --eval --latent_dim 2 --hidden_dim 16 --observation_dim 1 --batch_size 128 --log_freq 1 --test_batch_size 10 --atol 1e-2 --anode_num_blocks 5 --data_path data/gbm_005.pkl --resume pretrained/model_gbm.pth --num_iwae 125 --niwae_test 125 --adaptive True```
 ### Likelihood Estimation on linear SDE <img src="https://render.githubusercontent.com/render/math?math=(\lambda=2)">
 ```python run_likelihood_estimation.py --eval --latent_dim 2 --hidden_dim 16 --observation_dim 1 --batch_size 128 --log_freq 1 --test_batch_size 10 --atol 1e-2 --anode_num_blocks 5 --data_path data/lsde_05.pkl --resume pretrained/model_lsde.pth --num_iwae 125 --niwae_test 125 --adaptive True```
 ### Likelihood Estimation on linear SDE <img src="https://render.githubusercontent.com/render/math?math=(\lambda=20)">
